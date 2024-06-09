@@ -15,7 +15,7 @@ interface FormFieldWrapperProps {
   control: Control<any>;
   name: string;
   label: string;
-  type: string;
+  type?: string;
   placeholder?: string;
   description?: string;
   options?: Array<{ label: string; value: string }>;
