@@ -9,8 +9,9 @@ export interface ProductApiInterface {
   stock?: string;
   tags?: string;
   brand?: string;
-  thumbnail?: URL;
-  images?: Array<URL>;
+  dimensions?: [];
+  thumbnail?: string;
+  images?: Array<string>;
 }
 
 export interface CategoriesApiInterface {
