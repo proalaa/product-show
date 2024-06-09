@@ -19,3 +19,24 @@ export interface CategoriesApiInterface {
   slug: string;
   url: URL;
 }
+
+export interface CartApiInterface {
+  id: number;
+  products: CartProductApiInterface[];
+  total: number;
+  discountedTotal: number;
+  userId: number;
+  totalProducts: number;
+  totalQuantity: number;
+}
+
+export interface CartProductApiInterface {
+  id: number;
+  title: string;
+  price: number;
+  quantity: number;
+  total: number;
+  discountPercentage: number;
+  discountedTotal: number;
+  thumbnail: string;
+}
